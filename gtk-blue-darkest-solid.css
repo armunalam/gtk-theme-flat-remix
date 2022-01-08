@@ -1,0 +1,71 @@
+/* Custom */
+
+/* Line 5891 changed */
+
+row {
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+row:first-child {
+    margin-top: 5px;
+}
+
+row:selected {
+    box-shadow: none;
+    outline: none;
+}
+
+row:selected:hover, row:selected:active:hover, row.activatable:selected:hover, row.activatable:selected:backdrop:hover, row.activatable:selected:active:hover {
+    background-color: rgb(13, 13, 13);
+}
+
+/* row box {
+    margin-left: 6px;
+} */
+
+.nautilus-window row.sidebar-row {
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-left: 0px;
+}
+
+.nautilus-window row:not(:selected) box label.sidebar-label {
+    margin-left: 0px;
+    margin-right: -6px;
+}
+
+.nautilus-window row:not(:selected) box > image.sidebar-icon {
+    margin-left: -6px;
+    margin-right: 0px;
+}
+
+.nautilus-window row:selected box > image.sidebar-icon {
+    margin-left: -0px;
+    margin-right: 0px;
+}
+
+entry:focus {
+    box-shadow: 0 0 0 2px rgb(39, 119, 255) inset;
+    border: none;
+}
+
+.nautilus-window headerbar box widget stack > box.path-bar-box {
+    background-color: rgb(13, 13, 13);
+}
+
+/* .nautilus-window headerbar box widget stack box button label {
+    padding-right: 0px;
+} */
+
+dialog row:not(:selected) box > image.sidebar-icon {
+    margin-left: -6px;
+    margin-right: 0px;
+}
+
+.nautilus-window overlay widget.view * {
+    background-color: #2777ff;
+}
